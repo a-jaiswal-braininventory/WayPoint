@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.top-img {
+  background-image: url("assets/images/header-banner.png");
+  height: 1142.3901617539354px;
+  width: 2950.093966972546px;
+  background-size: cover;
+  rotate: 153.67deg;
+  position: absolute; 
+  top: -232.44px;
+  left: -1200px;
+  z-index: -1;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+}
+
+.bottom-img {
+  background-image: url("assets/images/header-banner.png");
+  background-size: cover;
+  width: 100vw;
+  height: 920px;
+  opacity: 0.3;
+  z-index: -1;
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  background-repeat: no-repeat;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.border-parent {
+  line-height: 0;
+  height: 10px;
+  position: relative;
+}
+
+.border-parent::before {
+  left: 55px;
+}
+
+.border-parent::before,
+.border-parent::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: #6b71b2;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+}
+
+.border-parent::after {
+  right: 55px;
+}
+
+.border-main {
+  border-top: 1px solid #000;
+  display: inline-block;
+  padding: 0 90px;
+  line-height: 0;
+}
+
+.flight-2::after {
+  content: none;
+}
+
+.flight-2::before {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flight-3::after {
+  content: none;
+}
+
+.flight-3::before {
+  content: none;
+}
+
+.corouselContainer {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.corouselContainer::-webkit-scrollbar {
+  display: none;
+}
