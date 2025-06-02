@@ -3,7 +3,7 @@ import "./App.css";
 import NoPage from "./pages/NoPage";
 import IntellSearchPageDef from "./pages/IntellSearchPageDef";
 import IntellSearchPageCol from "./pages/IntellSearchPageCol";
-import IntellSearchMultiCity from "./pages/IntellSearchMultiCIty";
+import IntellSearchMultiCity from "./pages/IntellSearchMultiCity";
 import ManualSearchDef from "./pages/ManualSearchDef";
 import ManualSearchCol from "./pages/ManualSearchCol";
 import ManualSearchMultiCity from "./pages/ManualSearchMultiCity";
