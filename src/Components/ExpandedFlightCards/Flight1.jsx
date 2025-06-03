@@ -102,7 +102,7 @@ function Flight1() {
             </div>
             <div className="flightTimer">
               <div>8h 55m</div>
-              <div className="w-[65.87px] h-[25px] my-3">
+              <div className="w-[75px] h-[23px] my-3">
                 <img
                   src={indigoImg}
                   alt=""
@@ -154,7 +154,7 @@ function Flight1() {
             </div>
             <div className="flightTimer">
               <div>1h 20m</div>
-              <div className="w-[65.87px] h-[25px] my-3">
+              <div className="w-[44.44px] h-[25px] my-3">
                 <img
                   src={AirIndia}
                   alt=""
