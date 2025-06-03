@@ -32,9 +32,9 @@ const RangeSlider = () => {
   const fillColor = () => {
     const percent1 = (sliderOneVal / sliderMax) * 100;
     const percent2 = (sliderTwoVal / sliderMax) * 100;
-    if (sliderTrackRef.current) {
-      sliderTrackRef.current.style.background = `rgb(107, 113, 178)`;
-    }
+     if (sliderTrackRef.current) {
+    sliderTrackRef.current.style.background = `linear-gradient(to right, #dadae5 ${percent1}%, rgb(107, 113, 178) ${percent1}%, rgb(107, 113, 178) ${percent2}%, #dadae5 ${percent2}%)`;
+  }
   };
 
   return (

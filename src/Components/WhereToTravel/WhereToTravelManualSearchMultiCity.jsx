@@ -7,10 +7,10 @@ function WhereToTravelManualSearchMultiCity() {
       <div className="w-full bg-[#DBDDED] p-8 rounded-2xl shadow-md mt-7">
         <div className="flex">
           <div className="inner-box-left w-2/3">
-            <h1 className="heading text-left p-4 mb-4 text-xl">
+            <h1 className="heading text-left p-4 text-xl">
               Where would you like to travel?
             </h1>
-            <div className="1st-row mt-4 flex gap-4">
+            <div className="1st-row mt-8 flex gap-4">
               <div className="bg-white px-8 py-4 rounded-[30px] w-1/2 flex items-center">
                 <label htmlFor="travelform" className="text-left">
                   From
@@ -49,7 +49,7 @@ function WhereToTravelManualSearchMultiCity() {
                 </div>
               </div>
             </div>
-            <div className="2nd-row flex gap-4 mt-5">
+            <div className="2nd-row flex gap-4 mt-7">
               <div className="bg-white px-8 py-4 rounded-[30px] w-1/2 flex items-center">
                 <label htmlFor="travelform" className="text-left">
                   From
@@ -88,7 +88,7 @@ function WhereToTravelManualSearchMultiCity() {
                 </div>
               </div>
             </div>
-            <div className="3rd-row flex gap-4 mt-5">
+            <div className="3rd-row flex gap-4 mt-7">
               <div className="bg-white px-8 py-4 rounded-[30px] w-1/2 flex items-center">
                 <label htmlFor="travelform" className="text-left">
                   From
@@ -128,7 +128,7 @@ function WhereToTravelManualSearchMultiCity() {
               </div>
             </div>
           </div>
-          <div className="inner-box-right w-1/3 pl-6 flex flex-col gap-4">
+          <div className="inner-box-right w-1/3 pl-6">
             <div className="1st-row flex">
               <div className="bg-white py-4 px-8 rounded-[30px] w-full flex items-center justify-between">
                 <label htmlFor="travelersno" className="text-left">
@@ -146,7 +146,7 @@ function WhereToTravelManualSearchMultiCity() {
                 </div>
               </div>
             </div>
-            <div className="bg-white px-8 py-4 rounded-[30px] flex items-center">
+            <div className="bg-white px-8 py-4 rounded-[30px] flex items-center mt-7">
               <label htmlFor="departDate" className="text-left">
                 Depart
               </label>
@@ -163,7 +163,7 @@ function WhereToTravelManualSearchMultiCity() {
                 <i className="fa-solid fa-caret-down text-2xl"></i>
               </div>
             </div>
-            <div className="bg-white px-8 py-4 rounded-[30px] flex items-center">
+            <div className="bg-white px-8 py-4 rounded-[30px] flex items-center mt-7">
               <label htmlFor="departDate" className="text-left">
                 Depart
               </label>
@@ -180,7 +180,7 @@ function WhereToTravelManualSearchMultiCity() {
                 <i className="fa-solid fa-caret-down text-2xl"></i>
               </div>
             </div>
-            <div className="bg-white px-8 py-4 rounded-[30px] flex items-center">
+            <div className="bg-white px-8 py-4 rounded-[30px] flex items-center mt-7">
               <label htmlFor="departDate" className="text-left">
                 Depart
               </label>
@@ -197,6 +197,20 @@ function WhereToTravelManualSearchMultiCity() {
                 <i className="fa-solid fa-caret-down text-2xl"></i>
               </div>
             </div>
+          </div>
+          <div className="right-closeBtns grid gap-10 items-center ml-2">
+            <p className="invisible w-8 h-8 flex items-center justify-center">
+              <img src={XFill} alt="" className="w-5 h-5" />
+            </p>
+            <p className="w-8 h-8 flex items-center justify-center">
+              <img src={XFill} alt="" className="w-5 h-5" />
+            </p>
+            <p className="w-8 h-8 flex items-center justify-center">
+              <img src={XFill} alt="" className="w-5 h-5" />
+            </p>
+            <p className="w-8 h-8 flex items-center justify-center">
+              <img src={XFill} alt="" className="w-5 h-5" />
+            </p>
           </div>
         </div>
         <button className="rounded-[32px] bg-white flex items-center justify-between h-14 w-44  py-3 px-7 text-xl mx-auto mt-8">

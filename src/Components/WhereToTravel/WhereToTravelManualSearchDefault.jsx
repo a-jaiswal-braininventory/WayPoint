@@ -7,10 +7,10 @@ function WhereToTravelManualSearchDefault() {
         <div className="outerBox w-full bg-[#DBDDED] p-8 mt-7 rounded-2xl shadow-md">
           <div className="flex gap-5 ">
             <div className="left-Box w-2/3">
-              <span className="text-left block mb-4 p-4 text-xl">
+              <span className="text-left block mb-8 p-4 text-xl">
                 Where would you like to travel?
               </span>
-              <div className="left-bottom-box flex mt-4 gap-4">
+              <div className="left-bottom-box flex gap-4">
                 <div className="bg-white py-4 px-8 rounded-[30px] w-1/2 flex items-center">
                   <label htmlFor="travelfrom" className="text-left">
                     From
@@ -46,7 +46,7 @@ function WhereToTravelManualSearchDefault() {
                 </div>
               </div>
             </div>
-            <div className="right-Box w-1/3 flex flex-col gap-[14px]">
+            <div className="right-Box w-1/3">
               <div className="bg-white py-4 px-8 rounded-[30px] w-full flex items-center justify-between">
                 <label htmlFor="travelersno" className="text-left">
                   No. of Travellers
@@ -62,14 +62,20 @@ function WhereToTravelManualSearchDefault() {
                   <i className="fa-solid fa-caret-down text-2xl"></i>
                 </div>
               </div>
-              <div className="bg-white py-4 px-8 rounded-[30px] w-full flex justify-between items-center">
-                <label htmlFor="travelersno" className="text-left">
+              <div className="bg-white py-4 px-8 rounded-[30px] w-full flex justify-between items-center mt-7">
+                <label htmlFor="traveldate" className="text-left">
                   Depart
                 </label>
-                <input
-                  type="date"
-                  className="w-full appearance-none outline-none px-2 text-[#636C72] pl-5 text-lg"
-                />
+                <select
+                  name=""
+                  id="traveldate"
+                  className="w-1/2 appearance-none outline-none px-2 text-[#636C72] pl-5 text-base"
+                >
+                  <option value="">DD/MM/YYYY</option>
+                </select>
+                <div className="dropBTN cursor-pointer">
+                  <i className="fa-solid fa-caret-down text-2xl"></i>
+                </div>
               </div>
             </div>
           </div>
