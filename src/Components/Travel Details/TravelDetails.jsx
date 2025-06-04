@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function TravelDetails() {
+
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="travelDetailContainer bg-[#DBDDED] rounded-b-2xl p-8">
@@ -65,7 +69,7 @@ function TravelDetails() {
         </div>
       </div>
       <div className="flex justify-center items-center h-20 my-6">
-        <button className="bg-[#6B71B2] w-[186px] h-[60px] rounded-[32px] text-white">
+        <button className="bg-[#6B71B2] w-[186px] h-[60px] rounded-[32px] text-white" onClick={()=>{navigate('/intel-collapsed')}}>
           Search Flights
         </button>
       </div>

@@ -1,7 +1,12 @@
 import React from "react";
 import IndigoIMG from "../../assets/images/indigo.png";
+import { useNavigate } from "react-router-dom";
+
 
 function FlightDetails1() {
+
+  const navigate = useNavigate()
+
   return (
     <div>
       <div className="flight-detailsCard flex shadow-md rounded-2xl overflow-hidden mb-7">
@@ -58,7 +63,7 @@ function FlightDetails1() {
         </div>
         <div className="book-Flight w-[20%] bg-[#6B71B2]">
           <div className="flex flex-col items-center justify-around p-6 w-full h-full relative ">
-            <button className="absolute top-4 right-4">
+            <button className="absolute top-4 right-4" onClick={()=>{navigate('/expanded-flight-card')}}>
               <span className="expandBtn bg-white h-10 w-10 flex items-center justify-center rounded-full">
                 <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
               </span>

@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function WhereToTravelManualSearchDefault() {
+  const navigate = useNavigate();
   return (
     <div className="mainContainer">
       <div>
@@ -79,13 +81,23 @@ function WhereToTravelManualSearchDefault() {
               </div>
             </div>
           </div>
-          <button className="bg-white mt-8 p-4 w-[197px] h-[60px] rounded-[32px] flex justify-around mx-auto items-center">
+          <button
+            className="bg-white mt-8 p-4 w-[197px] h-[60px] rounded-[32px] flex justify-around mx-auto items-center"
+            onClick={() => {
+              navigate("/manualsearch-multicity");
+            }}
+          >
             <span className="block text-2xl">+</span>
             <span className="block text-lg">Add Flight</span>
           </button>
         </div>
       </div>
-      <button className="bg-[#6B71B2] rounded-[32px] text-white w-[186px] h-[60px] mt-10">
+      <button
+        className="bg-[#6B71B2] rounded-[32px] text-white w-[186px] h-[60px] mt-10"
+        onClick={() => {
+          navigate("/manual-collapsed");
+        }}
+      >
         Search Flight
       </button>
       <hr className="border-gray-400 m-2 my-5" />
