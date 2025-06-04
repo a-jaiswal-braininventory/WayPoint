@@ -8,7 +8,7 @@ import ManualSearchDef from "./pages/ManualSearchDef";
 import ManualSearchCol from "./pages/ManualSearchCol";
 import ManualSearchMultiCity from "./pages/ManualSearchMultiCity";
 import ExpandedFlightCard from "./pages/ExpandedFlightCard";
-
+``
 function App() {
   return (
     <>
