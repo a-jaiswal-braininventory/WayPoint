@@ -52,25 +52,19 @@ function Filter() {
           <span className="text-left font-normal text-2xl">
             Flight Outbound
           </span>
-          <span className="text-left font-normal text-lg">00:00 - 23:59</span>
-          {/* <input type="range" /> */}
-          <RangeSlider/>
+          <RangeSlider />
         </div>
       </div>
       <div className="filter-categories px-7">
         <div className="singleCategory flex flex-col gap-2 mt-7">
           <span className="text-left font-normal text-2xl">Flight Inbound</span>
-          <span className="text-left font-normal text-lg">00:00 - 23:59</span>
-          {/* <input type="range" /> */}
-          <RangeSlider/>
+          <RangeSlider />
         </div>
       </div>
       <div className="filter-categories px-7">
         <div className="singleCategory flex flex-col gap-2 mt-7">
           <span className="text-left font-normal text-2xl">Total Duration</span>
-          <span className="text-left font-normal text-lg">00:00 - 23:59</span>
-          {/* <input type="range" /> */}
-          <RangeSlider/>
+          <RangeSlider />
         </div>
       </div>
       <div className="filter-categories px-7">
@@ -78,9 +72,7 @@ function Filter() {
           <span className="text-left font-normal text-2xl">
             Stopover Duration
           </span>
-          <span className="text-left font-normal text-lg">00:00 - 23:59</span>
-          {/* <input type="range" /> */}
-          <RangeSlider/>
+          <RangeSlider />
         </div>
       </div>
       <div className="filter-categories px-7">
@@ -88,9 +80,7 @@ function Filter() {
           <span className="text-left font-normal text-2xl">
             Stopover Duration
           </span>
-          <span className="text-left font-normal text-lg">00:00 - 23:59</span>
-          {/* <input type="range" /> */}
-          <RangeSlider/>
+          <RangeSlider />
         </div>
       </div>
 

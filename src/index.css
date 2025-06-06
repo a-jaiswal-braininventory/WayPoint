@@ -2,15 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @font-face {
+  font-family: "Gilroy";
+  src: url(./assets/fonts/Gilroy-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+} */
+
 .top-img {
   background-image: url("assets/images/header-banner.png");
   height: 1142.3901617539354px;
-  width: 2950.093966972546px;
+  width: 100vw;
   background-size: cover;
-  rotate: 153.67deg;
-  position: absolute; 
+  rotate: 180deg;
+  position: absolute;
   top: -232.44px;
-  left: -1200px;
+  /* left: -1200px; */
   z-index: -1;
   opacity: 0.3;
   background-repeat: no-repeat;
@@ -29,9 +36,11 @@
   background-repeat: no-repeat;
 }
 
+html,
 body {
   width: 100vw;
   overflow-x: hidden;
+  /* font-family: 'Gilroy'; */
 }
 
 .border-parent {
@@ -40,8 +49,16 @@ body {
   position: relative;
 }
 
+.border-main {
+  border-top: 1px solid #000;
+  display: inline-block;
+  /* padding: 0 90px; */
+  width: 150px;
+  line-height: 0;
+}
+
 .border-parent::before {
-  left: 55px;
+  left: 30px;
 }
 
 .border-parent::before,
@@ -58,14 +75,7 @@ body {
 }
 
 .border-parent::after {
-  right: 55px;
-}
-
-.border-main {
-  border-top: 1px solid #000;
-  display: inline-block;
-  padding: 0 90px;
-  line-height: 0;
+  right: 30px;
 }
 
 .flight-2::after {

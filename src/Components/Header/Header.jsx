@@ -6,23 +6,26 @@ function Header() {
   const navigate = useNavigate();
 
   return (
-    <>
+    <div className="w-full overflow-x-hidden">
       <div className="top-img"></div>
       <div className="mt-[50px] px-[50px] container mx-auto">
-        <div
-          className="header-top cursor-pointer outline-none"
-          onClick={() => {
-            navigate("/");
-          }}
-        >
+        <div className="header-top outline-none">
           <img
-            className="h-[71.02px] w-[260px] object-contain"
+            className="h-[71.02px] w-[260px] cursor-pointer object-contain"
             src={LogoImg}
             alt=""
+            onClick={() => {
+              navigate("/");
+            }}
           />
         </div>
         <div className="header-bottom flex justify-between items-center mt-[54.25px]">
-          <button className="back-button text-[#7179BD] flex items-center gap-3 " onClick={()=>{navigate(-1)}}>
+          <button
+            className="back-button text-[#7179BD] flex items-center gap-3 "
+            onClick={() => {
+              navigate(-1);
+            }}
+          >
             <span className="rounded-full text-white bg-[#7179BD] w-[44px] h-[44px] flex items-center justify-center cap">
               <i className="fa-solid fa-angle-left text-2xl"></i>
             </span>
@@ -33,7 +36,7 @@ function Header() {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

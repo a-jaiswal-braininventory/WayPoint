@@ -1,3 +1,5 @@
+WhereToTravelManualSearchDefault;
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -7,77 +9,74 @@ function WhereToTravelManualSearchDefault() {
     <div className="mainContainer">
       <div>
         <div className="outerBox w-full bg-[#DBDDED] p-8 mt-7 rounded-2xl shadow-md">
-          <div className="flex gap-5 ">
-            <div className="left-Box w-2/3">
-              <span className="text-left block mb-8 p-4 text-xl">
-                Where would you like to travel?
-              </span>
-              <div className="left-bottom-box flex gap-4">
-                <div className="bg-white py-4 px-8 rounded-[30px] w-1/2 flex items-center">
-                  <label htmlFor="travelfrom" className="text-left">
-                    From
-                  </label>
-                  <select
-                    name=""
-                    id="travelfrom"
-                    className="appearance-none outline-none px-2 text-[#636C72] w-full text-base pl-5"
-                  >
-                    <option value="">City, Airport Name or IATA</option>
-                  </select>
-                  <div className="dropBTN cursor-pointer">
-                    <i className="fa-solid fa-caret-down text-2xl"></i>
-                  </div>
-                </div>
-                <p className="flex justify-center items-center">
-                  <i className="fa-solid fa-plane -rotate-45"></i>
-                </p>
-                <div className="bg-white py-4 px-8 rounded-[30px] w-1/2 flex gap-3 items-center">
-                  <label htmlFor="travelto" className="text-left">
-                    To
-                  </label>
-                  <select
-                    name=""
-                    id="travelto"
-                    className="w-full appearance-none outline-none px-2 text-[#636C72] pl-5 text-base "
-                  >
-                    <option value="">City, Airport Name or IATA</option>
-                  </select>
-                  <div className="dropBTN cursor-pointer">
-                    <i className="fa-solid fa-caret-down text-2xl"></i>
-                  </div>
-                </div>
+          <div className="grid grid-cols-3 grid-rows-2 gap-x-4 gap-y-4">
+            <span className="text-left p-4 text-xl col-start-1 col-end-3">
+              Where would you like to travel?
+            </span>
+            {/* <div>Leave a gap</div> */}
+            <div className="bg-white px-8 rounded-[30px] flex items-center justify-between">
+              <label htmlFor="travelersno" className="text-left">
+                No. of Travellers
+              </label>
+              <select
+                name=""
+                id="travelersno"
+                className="w-1/2 appearance-none outline-none px-2 text-[#636C72] pl-5 text-base"
+              >
+                <option value="">00</option>
+              </select>
+              <div className="dropBTN cursor-pointer">
+                <i className="fa-solid fa-caret-down text-2xl"></i>
               </div>
             </div>
-            <div className="right-Box w-1/3">
-              <div className="bg-white py-4 px-8 rounded-[30px] w-full flex items-center justify-between">
-                <label htmlFor="travelersno" className="text-left">
-                  No. of Travellers
+            <div className="inputAndFlightIcon flex">
+              <div className="bg-white py-4 px-8 rounded-[30px] flex items-center w-[92%]">
+                <label htmlFor="travelfrom" className="text-left">
+                  From
                 </label>
                 <select
                   name=""
-                  id="travelersno"
-                  className="w-1/2 appearance-none outline-none px-2 text-[#636C72] pl-5 text-base"
+                  id="travelfrom"
+                  className="appearance-none outline-none px-2 text-[#636C72] w-full text-base pl-5"
                 >
-                  <option value="">00</option>
+                  <option value="">City, Airport Name or IATA</option>
                 </select>
                 <div className="dropBTN cursor-pointer">
                   <i className="fa-solid fa-caret-down text-2xl"></i>
                 </div>
               </div>
-              <div className="bg-white py-4 px-8 rounded-[30px] w-full flex justify-between items-center mt-7">
-                <label htmlFor="traveldate" className="text-left">
-                  Depart
-                </label>
-                <select
-                  name=""
-                  id="traveldate"
-                  className="w-1/2 appearance-none outline-none px-2 text-[#636C72] pl-5 text-base"
-                >
-                  <option value="">DD/MM/YYYY</option>
-                </select>
-                <div className="dropBTN cursor-pointer">
-                  <i className="fa-solid fa-caret-down text-2xl"></i>
-                </div>
+              <p className="flex justify-end items-center w-[8%]">
+                <i className="fa-solid fa-plane -rotate-45"></i>
+              </p>
+            </div>
+            <div className="bg-white py-4 px-8 rounded-[30px] flex gap-3 items-center">
+              <label htmlFor="travelto" className="text-left">
+                To
+              </label>
+              <select
+                name=""
+                id="travelto"
+                className="w-full appearance-none outline-none px-2 text-[#636C72] pl-5 text-base "
+              >
+                <option value="">City, Airport Name or IATA</option>
+              </select>
+              <div className="dropBTN cursor-pointer">
+                <i className="fa-solid fa-caret-down text-2xl"></i>
+              </div>
+            </div>
+            <div className="bg-white py-4 px-8 rounded-[30px] flex justify-between items-center">
+              <label htmlFor="traveldate" className="text-left">
+                Depart
+              </label>
+              <select
+                name=""
+                id="traveldate"
+                className="w-1/2 appearance-none outline-none px-2 text-[#636C72] pl-5 text-base"
+              >
+                <option value="">DD/MM/YYYY</option>
+              </select>
+              <div className="dropBTN cursor-pointer">
+                <i className="fa-solid fa-caret-down text-2xl"></i>
               </div>
             </div>
           </div>

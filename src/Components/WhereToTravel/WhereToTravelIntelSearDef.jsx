@@ -2,8 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function WhereToTravelIntelSearDef() {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="bg-[#DBDDED] rounded-t-2xl mt-8">
       <div className="WhereToTravelBox p-8">
@@ -28,8 +27,13 @@ function WhereToTravelIntelSearDef() {
               <i className="fa-solid fa-caret-down text-2xl"></i>
             </div>
           </div>
-          <button className="rounded-[32px] bg-white flex items-center justify-between h-14 w-44  py-3 px-7 text-xl" onClick={()=>{navigate('/intelsearch-multicity')}}>
-            <span>+</span>
+          <button
+            className="rounded-[32px] bg-white flex justify-between h-14 w-44  py-3 px-7 text-xl"
+            onClick={() => {
+              navigate("/intelsearch-multicity");
+            }}
+          >
+            <p className="">+</p>
             <span className="text-left">Add City</span>
           </button>
         </div>

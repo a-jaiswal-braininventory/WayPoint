@@ -1,12 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import searchIcon from '../../assets/SVG/Search Icon.svg'
 
 function SearchComponent({ searchMode }) {
   const navigate = useNavigate();
 
   return (
     <div className="serachFLightWrap mt-[42px] ">
-      <div className="headerSearch text-left text-7xl font-black">
+      <div className="headerSearch text-left text-7xl font-black my-5">
         <h1>Search Flights</h1>
       </div>
       <div className="select-search">
@@ -23,7 +24,7 @@ function SearchComponent({ searchMode }) {
                 }}
               >
                 <span>
-                  <i className="fa-solid fa-magnifying-glass text-xl"></i>
+                  <img src={searchIcon} alt="" />
                 </span>
                 <span className="text-xl font-normal">Go to Manual Search</span>
               </button>
@@ -54,7 +55,7 @@ function SearchComponent({ searchMode }) {
                 }}
               >
                 <span>
-                  <i className="fa-solid fa-magnifying-glass text-xl"></i>
+                  <img src={searchIcon} alt="" />
                 </span>
                 <span className="text-xl font-normal">
                   Go to Intelligent Search
