@@ -1,5 +1,3 @@
-WhereToTravelManualSearchDefault;
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -13,7 +11,7 @@ function WhereToTravelManualSearchDefault() {
             <span className="text-left p-4 text-xl col-start-1 col-end-3">
               Where would you like to travel?
             </span>
-            {/* <div>Leave a gap</div> */}
+            {/* <div>Leave a gap for empty space</div> */}
             <div className="bg-white px-8 rounded-[30px] flex items-center justify-between">
               <label htmlFor="travelersno" className="text-left">
                 No. of Travellers

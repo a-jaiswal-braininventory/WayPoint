@@ -7,7 +7,7 @@ function Layout({ children }) {
   return (
     <div>
       <Header />
-      <div className="px-[50px] container mx-auto">{children}</div>
+      <div className="px-[20px] md:px-[50px] container mx-auto">{children}</div>
       <Footer />
     </div>
   );

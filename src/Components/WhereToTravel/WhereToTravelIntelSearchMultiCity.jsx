@@ -43,7 +43,9 @@ function WhereToTravelIntelSearchMultiCity() {
               </span>
             </div>
           </div>
-           
+          <span>
+            <img src={XFill} alt="" />
+          </span>
         </div>
         <div className="cityDetails-2 flex items-center gap-8 my-5">
           <div className="city-names-and-button bg-[#6B71B2] px-9 py-4 rounded-[30px] w-1/2 text-white font-normal text-xl flex justify-between">

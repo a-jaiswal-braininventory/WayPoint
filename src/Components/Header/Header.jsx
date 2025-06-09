@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="w-full overflow-x-hidden">
       <div className="top-img"></div>
-      <div className="mt-[50px] px-[50px] container mx-auto">
+      <div className="mt-8 lg:mt-[50px] px-[20px] md:px-[50px] container mx-auto">
         <div className="header-top outline-none">
           <img
             className="h-[71.02px] w-[260px] cursor-pointer object-contain"

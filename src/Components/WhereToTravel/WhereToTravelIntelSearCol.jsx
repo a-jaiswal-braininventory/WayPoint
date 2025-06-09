@@ -5,7 +5,7 @@ import userFilled from "../../assets/SVG/user.svg";
 function WhereToTravelIntelSearCol() {
   return (
     <div className="bg-[#DBDDED] rounded-2xl mt-8">
-      <div className="WhereToTravelBox p-8">
+      <div className="WhereToTravelBox px-5 lg:px-8 py-8">
         <div className="header-BTN flex items-center justify-between">
           <h4 className="text-left text-xl font-semibold">
             Where would you like to travel?
@@ -14,7 +14,7 @@ function WhereToTravelIntelSearCol() {
             <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
           </span>
         </div>
-        <div className="bg-white border rounded-[30px] w-full p-4 flex justify-around mt-3">
+        <div className="bg-white border rounded-[30px] w-full p-4 flex flex-col lg:flex-row items-start justify-around mt-3 gap-3">
           <div className="part-1">
             <span className="mx-2">
               <i className="fa-solid fa-plane -rotate-45"></i>
@@ -23,7 +23,7 @@ function WhereToTravelIntelSearCol() {
             <span className="mx-2">
               <i class="fa-solid fa-arrow-right-long"></i>
             </span>
-            <input className="w-24" type="text" placeholder="" value='Kochi' />
+            <input className="w-20" type="text" placeholder="" value='Kochi' />
           </div>
           <div className="part-2">
             <span className="mx-2">
