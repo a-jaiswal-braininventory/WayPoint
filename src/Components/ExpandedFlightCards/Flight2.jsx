@@ -3,7 +3,7 @@ import indigoImg from "../../assets/images/indigo.png";
 
 function Flight2() {
   return (
-    <div className="w-1/3 ">
+    <div className="w-full sm:w-[48%] lg:w-[31%]">
       <h1 className="mb-2 text-xl">Flight 2</h1>
       <div className="main-box bg-white rounded-xl px-2 py-5 shadow-md">
         <h1 className="text-xl font-normal">Indore (IDR) - Kochi (COX)</h1>

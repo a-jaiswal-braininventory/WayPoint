@@ -8,7 +8,7 @@ function ExpandedFlightCard() {
     <>
       <div>
         <div className="w-full bg-[#DBDDED] rounded-xl overflow-hidden py-10 px-8">
-          <div className="main-Container flex gap-4">
+          <div className="main-Container flex flex-wrap gap-4">
             <Flight1 />
             <Flight2 />
             <Flight3 />

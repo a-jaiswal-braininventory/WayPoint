@@ -217,8 +217,18 @@ function WhereToTravelManualSearchMultiCity() {
 
         {/* Grid ends here */}
 
-        <button className="rounded-[32px] bg-white flex items-center justify-between h-14 w-44  py-3 px-7 text-xl mx-auto mt-8">
-          <span>+</span>
+        <button className="rounded-[32px] bg-white flex items-center justify-center gap-3 h-14 w-44  py-3 px-7 text-xl mx-auto mt-8">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+            </svg>
+          </span>
           <span className="text-left">Add City</span>
         </button>
       </div>

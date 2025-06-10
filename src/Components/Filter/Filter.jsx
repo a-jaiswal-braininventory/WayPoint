@@ -44,7 +44,7 @@ function Filter() {
       </div>
 
       {/* Filter heading and reset button  */}
-      <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center items-start mt-4 px-6">
+      <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center items-start mt-4 px-4">
         <span className="text-[40px] font-bold">Filters</span>
         <div className="bg-[#DBDDED] rounded-3xl px-4 py-1 items-center whitespace-nowrap">
           <span className="text-base font-normal">Reset</span>
@@ -55,7 +55,7 @@ function Filter() {
       </div>
 
       {/* filter Categories  */}
-      <div className="filter-categories px-7">
+      <div className="filter-categories px-4">
         <div className="singleCategory flex flex-col gap-2 mt-7">
           <span className="text-left font-normal text-2xl">
             Flight Outbound
@@ -63,19 +63,19 @@ function Filter() {
           <RangeSlider />
         </div>
       </div>
-      <div className="filter-categories px-7">
+      <div className="filter-categories px-4">
         <div className="singleCategory flex flex-col gap-2 mt-7">
           <span className="text-left font-normal text-2xl">Flight Inbound</span>
           <RangeSlider />
         </div>
       </div>
-      <div className="filter-categories px-7">
+      <div className="filter-categories px-4">
         <div className="singleCategory flex flex-col gap-2 mt-7">
           <span className="text-left font-normal text-2xl">Total Duration</span>
           <RangeSlider />
         </div>
       </div>
-      <div className="filter-categories px-7">
+      <div className="filter-categories px-4">
         <div className="singleCategory flex flex-col gap-2 mt-7">
           <span className="text-left font-normal text-2xl">
             Stopover Duration
@@ -83,7 +83,7 @@ function Filter() {
           <RangeSlider />
         </div>
       </div>
-      <div className="filter-categories px-7">
+      <div className="filter-categories px-4">
         <div className="singleCategory flex flex-col gap-2 mt-7 mb-5">
           <span className="text-left font-normal text-2xl">
             Stopover Duration
@@ -94,7 +94,7 @@ function Filter() {
 
       {/* bottom options dropdown  */}
 
-      <div className="bottom-options px-7 mb-8">
+      <div className="bottom-options px-4 mb-8">
         <div className="single-option mt-8 relative">
           <label htmlFor="" className="text-xl font-medium text-left block">
             Maximum Stopovers

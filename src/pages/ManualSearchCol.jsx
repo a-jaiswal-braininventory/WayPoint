@@ -14,12 +14,12 @@ function ManualSearchCol() {
     <Layout>
       <SearchComponent searchMode={searchMode} />
       <WhereToTravelManualSeachCol/>
-      <hr className="my-8 border-gray-400" />
-       <div className="main-Container w-full flex gap-8 my-5">
-          <div className="fliterComponent w-1/4 bg-white border-[1px] border-[#6B71B2] rounded-2xl">
+      <hr className="my-9 border-gray-400" />
+       <div className="main-Container w-full flex flex-col xl:flex-row xl:gap-4 my-5">
+          <div className="fliterComponent xl:w-1/4 bg-white border-[1px] border-[#6B71B2] rounded-2xl mb-6 xl:mb-0">
             <Filter />
           </div>
-          <div className="cardBox w-3/4 bg-[#DBDDED] rounded-2xl shadow-lg px-6">
+          <div className="cardBox xl:w-3/4 bg-[#DBDDED] rounded-2xl shadow-lg px-4">
             <div className="searchSUmmaryCards w-full block">
               <SearchSummaryCards />
             </div>

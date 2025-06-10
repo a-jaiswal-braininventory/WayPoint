@@ -51,7 +51,7 @@ function TravelDetails() {
               id=""
             />
             <div className="cursor-pointer absolute right-6 bottom-5">
-              <i class="fa-solid fa-calendar"></i>
+              <i className="fa-solid fa-calendar"></i>
             </div>
           </div>
           <div className="rounded-3xl bg-white flex flex-col items-start py-4 px-6 relative">
@@ -63,7 +63,7 @@ function TravelDetails() {
               id=""
             />
             <div className="cursor-pointer absolute right-6 bottom-5">
-              <i class="fa-solid fa-calendar"></i>
+              <i className="fa-solid fa-calendar"></i>
             </div>
           </div>
           <div className="rounded-3xl bg-white flex flex-col items-start py-4 px-6 relative">

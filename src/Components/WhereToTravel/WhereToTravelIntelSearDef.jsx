@@ -28,7 +28,7 @@ function WhereToTravelIntelSearDef() {
             </div>
           </div>
           <button
-            className="rounded-[32px] bg-white flex items-center justify-around gap-2 h-14 lg:w-[15%] whitespace-nowrap  py-3 px-7 text-md"
+            className="rounded-[32px] bg-white flex items-center justify-center gap-3 h-14 lg:w-[15%] whitespace-nowrap  py-3 px-7 text-lg"
             onClick={() => {
               navigate("/intelsearch-multicity");
             }}
