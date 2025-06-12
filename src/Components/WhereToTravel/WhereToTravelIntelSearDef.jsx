@@ -10,14 +10,14 @@ function WhereToTravelIntelSearDef() {
           <h4 className="text-left text-lg lg:text-xl font-semibold">
             Where would you like to travel?
           </h4>
-          <span className="expandBtn bg-white h-10 w-10 flex items-center justify-center rounded-full cursor-pointer">
+          <span className="expandBtn bg-white h-10 w-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-slate-100">
             <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
           </span>
         </div>
         <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-6 mt-8">
           <div className="selectAndDropBTN relative flex w-full lg:w-[83%] items-center">
             <select
-              className="rounded-[32px] w-full h-14 px-8 bg-white text-[#636C72] text-xl font-normal appearance-none"
+              className="outline-none cursor-pointer rounded-[32px] w-full h-14 px-8 bg-white text-[#636C72] text-xl font-normal appearance-none"
               name=""
               id=""
             >
@@ -28,7 +28,7 @@ function WhereToTravelIntelSearDef() {
             </div>
           </div>
           <button
-            className="rounded-[32px] bg-white flex items-center justify-center gap-3 h-14 lg:w-[15%] whitespace-nowrap  py-3 px-7 text-lg"
+            className="rounded-[32px] bg-white flex items-center justify-center gap-3 h-14 lg:w-[15%] whitespace-nowrap  py-3 px-7 text-lg hover:bg-slate-100"
             onClick={() => {
               navigate("/intelsearch-multicity");
             }}

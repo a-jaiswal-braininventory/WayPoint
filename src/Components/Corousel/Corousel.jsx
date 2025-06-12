@@ -10,7 +10,7 @@ function Card({ keyId }) {
         <div className="contentBox shadow-md bg-white p-5 lg:p-8 rounded-2xl w-[290px] lg:w-[454px] h-[228px] lg:h-[228px] absolute lg:-bottom-[calc(200px/2)] -bottom-[calc(250px/2)]  lg:start-1/2 start-1/3  lg:-translate-x-1/2 -translate-x-1/3">
           <div className="flex justify-between font-medium">
             <h1 className="text-lg lg:text-xl">Columbia | Peru | Brazil</h1>
-            <span className="expandBtn bg-[#6B71B2] w-7 h-7 lg:h-10 lg:w-10 flex items-center justify-center rounded-full  cursor-pointer">
+            <span className="hover:bg-[#8188d3] expandBtn bg-[#6B71B2] w-7 h-7 lg:h-10 lg:w-10 flex items-center justify-center rounded-full  cursor-pointer">
               <i className="fa-solid fa-up-right-and-down-left-from-center text-white"></i>
             </span>
           </div>

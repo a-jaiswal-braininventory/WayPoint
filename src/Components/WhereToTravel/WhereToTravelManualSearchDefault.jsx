@@ -6,13 +6,13 @@ function WhereToTravelManualSearchDefault() {
   return (
     <div className="mainContainer">
       <div>
-        <div className="outerBox w-full bg-[#DBDDED] p-8 mt-7 rounded-2xl shadow-md">
+        <div className="outerBox w-full bg-[#DBDDED] lg:px-8 px-5 py-8  mt-7 rounded-2xl shadow-md">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-4">
             <div className="text-left p-4 text-xl col-span-1 md:col-span-2">
               Where would you like to travel?
             </div>
             {/* <div>Leave a gap for empty space</div> */}
-            <div className="bg-white py-4 px-8 rounded-[30px] flex items-center justify-between w-full">
+            <div className="bg-white py-4 px-8 rounded-[30px] flex items-center justify-between w-full relative">
               <label
                 htmlFor="travelersno"
                 className="text-left whitespace-nowrap"
@@ -22,27 +22,27 @@ function WhereToTravelManualSearchDefault() {
               <select
                 name=""
                 id="travelersno"
-                className="w-1/2 appearance-none outline-none px-2 text-[#636C72] pl-5 text-base"
+                className="w-full appearance-none outline-none px-2 text-[#636C72] pl-5 text-base bg-white cursor-pointer"
               >
                 <option value="">00</option>
               </select>
-              <div className="dropBTN cursor-pointer">
+              <div className="dropBTN cursor-pointer absolute right-6">
                 <i className="fa-solid fa-caret-down text-2xl"></i>
               </div>
             </div>
             <div className="inputAndFlightIcon flex w-full">
-              <div className="bg-white py-4 px-8 rounded-[30px] flex items-center w-full xl:w-[92%]">
+              <div className="bg-white py-4 px-8 rounded-[30px] flex items-center w-full xl:w-[92%] relative">
                 <label htmlFor="travelfrom" className="text-left">
                   From
                 </label>
                 <select
                   name=""
                   id="travelfrom"
-                  className="appearance-none outline-none px-2 text-[#636C72] w-full text-base pl-5"
+                  className="appearance-none outline-none px-2 text-[#636C72] w-full text-base pl-5 bg-white cursor-pointer"
                 >
                   <option value="">City, Airport Name or IATA</option>
                 </select>
-                <div className="dropBTN cursor-pointer">
+                <div className="dropBTN cursor-pointer absolute right-6">
                   <i className="fa-solid fa-caret-down text-2xl"></i>
                 </div>
               </div>
@@ -50,39 +50,39 @@ function WhereToTravelManualSearchDefault() {
                 <i className="fa-solid fa-plane -rotate-45"></i>
               </p>
             </div>
-            <div className="bg-white py-4 px-8 rounded-[30px] flex gap-3 items-center w-full">
+            <div className="bg-white py-4 px-8 rounded-[30px] flex gap-3 items-center w-full relative">
               <label htmlFor="travelto" className="text-left">
                 To
               </label>
               <select
                 name=""
                 id="travelto"
-                className="w-full appearance-none outline-none px-2 text-[#636C72] pl-5 text-base "
+                className="w-full appearance-none outline-none px-2 text-[#636C72] pl-5 text-base bg-white cursor-pointer"
               >
                 <option value="">City, Airport Name or IATA</option>
               </select>
-              <div className="dropBTN cursor-pointer">
+              <div className="dropBTN cursor-pointer  absolute right-6">
                 <i className="fa-solid fa-caret-down text-2xl"></i>
               </div>
             </div>
-            <div className="bg-white py-4 px-8 rounded-[30px] flex justify-between items-center w-full">
+            <div className="bg-white py-4 px-8 rounded-[30px] flex justify-between items-center w-full relative">
               <label htmlFor="traveldate" className="text-left">
                 Depart
               </label>
               <select
                 name=""
                 id="traveldate"
-                className="w-1/2 appearance-none outline-none px-2 text-[#636C72] pl-5 text-base"
+                className="w-full appearance-none outline-none px-2 text-[#636C72] pl-5 text-base bg-white cursor-pointer"
               >
                 <option value="">DD/MM/YYYY</option>
               </select>
-              <div className="dropBTN cursor-pointer">
+              <div className="dropBTN cursor-pointer absolute right-6">
                 <i className="fa-solid fa-caret-down text-2xl"></i>
               </div>
             </div>
           </div>
           <button
-            className="bg-white mt-8 p-4 w-[197px] h-[60px] rounded-[32px] flex justify-center gap-3 mx-auto items-center"
+            className="bg-white mt-8 p-4 w-[197px] h-[60px] rounded-[32px] flex justify-center gap-3 mx-auto items-center hover:bg-slate-100"
             onClick={() => {
               navigate("/manualsearch-multicity");
             }}
@@ -93,7 +93,7 @@ function WhereToTravelManualSearchDefault() {
         </div>
       </div>
       <button
-        className="bg-[#6B71B2] rounded-[32px] text-white w-[186px] h-[60px] mt-10"
+        className="bg-[#6B71B2] rounded-[32px] text-white w-[186px] h-[60px] mt-10 hover:bg-[#8188d3]"
         onClick={() => {
           navigate("/manual-collapsed");
         }}

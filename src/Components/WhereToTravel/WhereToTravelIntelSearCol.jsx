@@ -10,7 +10,7 @@ function WhereToTravelIntelSearCol() {
           <h4 className="text-left text-xl font-semibold">
             Where would you like to travel?
           </h4>
-          <span className="expandBtn bg-white h-10 w-10 flex items-center justify-center rounded-full">
+          <span className="expandBtn bg-white h-10 w-10 flex items-center justify-center rounded-full hover:bg-slate-100">
             <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
           </span>
         </div>
@@ -19,11 +19,11 @@ function WhereToTravelIntelSearCol() {
             <span className="mx-2">
               <i className="fa-solid fa-plane -rotate-45"></i>
             </span>
-            <input className="w-24" type="text" placeholder="" value='Los-Angeles' />
+            <input className="w-24" type="text" placeholder="" value='Los-Angeles'readOnly />
             <span className="mx-2">
-              <i class="fa-solid fa-arrow-right-long"></i>
+              <i className="fa-solid fa-arrow-right-long"></i>
             </span>
-            <input className="w-20" type="text" placeholder="" value='Kochi' />
+            <input className="w-20" type="text" placeholder="" value='Kochi' readOnly/>
           </div>
           <div className="part-2">
             <span className="mx-2">

@@ -29,7 +29,7 @@ function FlightDetails2() {
                   <span className="text-sm lg:text-base">29 Sep '24</span>
                 </span>
               </h5>
-              <div className="block2B lg:w-1/3">
+              <div className="block2B lg:w-1/3 sm:block hidden">
                 <p className="text-xs lg:text-sm">29h 50m</p>
                 <div className="flex items-center justify-center relative">
                   <p>
@@ -43,6 +43,27 @@ function FlightDetails2() {
                   </p>
                 </div>
                 <p className="text-xs lg:text-sm">2 stops (AMS ; BOM)</p>
+              </div>
+              <div className="block2BSmallScreen sm:hidden w-1/3 flex items-center justify-left mx-4 gap-2">
+                <div className="flex flex-col items-center relative">
+                  <p>
+                    <i className="fa-solid fa-plane -rotate-45"></i>
+                  </p>
+                  <div className="relative h-[70px] flex justify-center">
+                    <span className="w-[1px] h-full bg-black block"></span>
+
+                    {/* Dots */}
+                    <span className="w-[10px] h-[10px] bg-[#6B71B2] rounded-full absolute top-[25%]"></span>
+                    <span className="w-[10px] h-[10px] bg-[#6B71B2] rounded-full absolute bottom-[25%]"></span>
+                  </div>
+                  <p>
+                    <i className="fa-solid fa-location-dot"></i>
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs">29h 50m</p>
+                  <p className="text-xs">2 stops (AMS ; BOM)</p>
+                </div>
               </div>
               <h5 className="block2C grid justify-end lg:border-e lg:border-e-black pe-2 lg:pe-3 w-1/3">
                 <span className="lg:text-xl">Indore (IDR)</span>
@@ -77,7 +98,7 @@ function FlightDetails2() {
                   <span className="text-sm lg:text-base">3 Oct '24</span>
                 </span>
               </h5>
-              <div className="block2B lg:w-1/3">
+              <div className="block2B lg:w-1/3 sm:block hidden">
                 <p className="text-xs lg:text-sm">01h 00m</p>
                 <div className="flex items-center justify-center relative">
                   <p>
@@ -91,6 +112,26 @@ function FlightDetails2() {
                   </p>
                 </div>
                 <p className="text-xs lg:text-sm">1 stop (DEL)</p>
+              </div>
+              <div className="block2BSmallScreen sm:hidden w-1/3 flex items-center justify-left mx-4 gap-2">
+                <div className="flex flex-col items-center relative">
+                  <p>
+                    <i className="fa-solid fa-plane -rotate-45"></i>
+                  </p>
+                  <div className="relative h-[70px] flex justify-center">
+                    <span className="w-[1px] h-full bg-black block"></span>
+
+                    {/* Dots */}
+                    <span className="w-[10px] h-[10px] bg-[#6B71B2] rounded-full absolute top-[47%]"></span>
+                  </div>
+                  <p>
+                    <i className="fa-solid fa-location-dot"></i>
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs">1h 00m</p>
+                  <p className="text-xs">1 stop (DEL)</p>
+                </div>
               </div>
               <h5 className="block2C grid justify-end lg:border-e lg:border-e-black pe-2 lg:pe-3 w-1/3">
                 <span className="lg:text-xl">Kochi (COK)</span>
@@ -114,12 +155,12 @@ function FlightDetails2() {
                 navigate("/expanded-flight-card");
               }}
             >
-              <span className="expandBtn bg-white h-7 w-7 lg:h-10 lg:w-10 flex items-center justify-center rounded-full">
+              <span className="expandBtn hover:bg-slate-100 bg-white h-7 w-7 lg:h-10 lg:w-10 flex items-center justify-center rounded-full">
                 <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
               </span>
             </button>
             <div className="text-2xl font-semibold text-white">$758</div>
-            <button className="rounded-[32px] bg-white py-3 px-10">Book</button>
+            <button className="rounded-[32px] bg-white py-3 px-10 hover:bg-slate-100">Book</button>
             <div className="text-xl font-normal text-white">51h 35m</div>
           </div>
         </div>

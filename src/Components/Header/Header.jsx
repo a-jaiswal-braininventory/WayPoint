@@ -21,18 +21,18 @@ function Header() {
         </div>
         <div className="header-bottom flex justify-between items-center mt-5 md:mt-[54.25px]">
           <button
-            className="back-button text-[#7179BD] flex items-center gap-3 "
+            className="back-button text-[#7179BD] flex items-center gap-3"
             onClick={() => {
               navigate(-1);
             }}
           >
-            <span className="rounded-full text-white bg-[#7179BD] w-[44px] h-[44px] flex items-center justify-center cap">
+            <span className=" hover:bg-[#8188d3] rounded-full text-white bg-[#7179BD] w-[44px] h-[44px] flex items-center justify-center cap">
               <i className="fa-solid fa-angle-left text-2xl"></i>
             </span>
             <span className="text-xl font-black">Back</span>
           </button>
           <button className="w-[44px] h-[44px] text-[#7179BD] block">
-            <i className="fa-solid fa-circle-user text-4xl"></i>
+            <i className="fa-solid fa-circle-user text-4xl hover:text-[#8188d3]"></i>
           </button>
         </div>
       </div>

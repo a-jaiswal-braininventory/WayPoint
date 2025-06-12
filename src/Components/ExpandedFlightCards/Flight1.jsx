@@ -43,7 +43,7 @@ function Flight1() {
               <p>
                 <i className="fa-solid fa-plane -rotate-45"></i>
               </p>
-              <div className="borderLine md:w-[1px] md:h-[80px] bg-black text-center"></div>
+              <div className="borderLine w-[1px] h-[80px] bg-black text-center"></div>
               <p>
                 <i className="fa-solid fa-location-dot"></i>
               </p>
@@ -95,7 +95,7 @@ function Flight1() {
               <p>
                 <i className="fa-solid fa-plane -rotate-45"></i>
               </p>
-              <div className="borderLine md:w-[1px] md:h-[80px] bg-black text-center"></div>
+              <div className="borderLine w-[1px] h-[80px] bg-black text-center"></div>
               <p>
                 <i className="fa-solid fa-location-dot"></i>
               </p>
@@ -147,7 +147,7 @@ function Flight1() {
               <p>
                 <i className="fa-solid fa-plane -rotate-45"></i>
               </p>
-              <div className="borderLine md:w-[1px] md:h-[80px] bg-black text-center"></div>
+              <div className="borderLine w-[1px] h-[80px] bg-black text-center"></div>
               <p>
                 <i className="fa-solid fa-location-dot"></i>
               </p>

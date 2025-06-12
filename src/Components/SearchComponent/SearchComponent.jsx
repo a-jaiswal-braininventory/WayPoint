@@ -19,7 +19,7 @@ function SearchComponent({ searchMode }) {
 
             <div className="intelBtns flex flex-wrap md:flex-nowrap items-center gap-4 sm:gap-5">
               <button
-                className=" flex item-center gap-4 py-4 px-7 border-black border rounded-[30px] w-full md:w-[48%]"
+                className=" flex item-center gap-4 py-4 px-7 border-black border rounded-[30px] w-full md:w-[48%] hover:bg-white"
                 onClick={() => {
                   navigate("/manual-search");
                 }}
@@ -27,21 +27,21 @@ function SearchComponent({ searchMode }) {
                 <span>
                   <img src={searchIcon} alt="" />
                 </span>
-                <span className="text-xl font-normal">Go to Manual Search</span>
+                <span className="text-xl font-normal whitespace-nowrap">Go to Manual Search</span>
               </button>
 
-              <button className=" flex item-center gap-4 py-4 px-7 border-black border rounded-[30px] w-[47.5%] md:w-[24%]">
+              <button className="hover:bg-white flex item-center gap-4 py-4 px-7 border-black border rounded-[30px] w-[47.5%] md:w-[24%]">
                 <span>
                   <i className="fa-solid fa-clipboard-list text-xl"></i>
                 </span>
                 <span className="text-xl font-normal">Summary</span>
               </button>
 
-              <button className=" flex item-center gap-4 py-4 px-7 border-black border rounded-[30px] w-[47.5%]  md:w-[28%] ">
+              <button className="hover:bg-white flex item-center gap-4 py-4 px-7 border-black border rounded-[30px] w-[47.5%]  md:w-[28%] ">
                 <span>
                   <i className="fa-solid fa-bookmark text-xl"></i>
                 </span>
-                <span className="text-xl font-normal">Save Trip</span>
+                <span className="text-xl font-normal whitespace-nowrap.563">Save Trip</span>
               </button>
             </div>
 
@@ -53,7 +53,7 @@ function SearchComponent({ searchMode }) {
             </div>
             <div className="manualBtns w-full lg:w-[33%] whitespace-nowrap">
               <button
-                className=" flex item-center gap-4 py-4 px-7 md:px-5 border-black border rounded-[30px] w-full"
+                className="hover:bg-white flex item-center gap-4 py-4 px-7 md:px-5 border-black border rounded-[30px] w-full"
                 onClick={() => {
                   navigate("/");
                 }}

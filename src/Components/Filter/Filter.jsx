@@ -2,7 +2,7 @@ import React from "react";
 import reset from "../../assets/SVG/reset.svg";
 import RangeSlider from "../RangeSlider/RangeSlider";
 
-function Filter() {
+function Filter( {setShowFilters}) {
   return (
     <div className="filter-box">
       {/* Sort and current dropdown */}
@@ -46,12 +46,12 @@ function Filter() {
       {/* Filter heading and reset button  */}
       <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center items-start mt-4 px-4">
         <span className="text-[40px] font-bold">Filters</span>
-        <div className="bg-[#DBDDED] rounded-3xl px-4 py-1 items-center whitespace-nowrap">
+        <button className="bg-[#DBDDED] rounded-3xl px-4 py-1 items-center whitespace-nowrap">
           <span className="text-base font-normal">Reset</span>
           <span className="pl-1">
             <img src={reset} alt="" className="inline-block h-4 w-4" />
           </span>
-        </div>
+        </button>
       </div>
 
       {/* filter Categories  */}
@@ -144,6 +144,10 @@ function Filter() {
             <div className="dropBTN cursor-pointer absolute right-6">
               <i className="fa-solid fa-caret-down text-2xl"></i>
             </div>
+          </div>
+          <div className="xl:hidden block">
+            <button className="w-2/3 bg-[#6B71B2] mx-auto rounded-3xl p-5 text-white my-10 hover:bg-[#8188d3]"
+            onClick={()=>{setShowFilters(false)}}>Close Filters</button>
           </div>
         </div>
       </div>

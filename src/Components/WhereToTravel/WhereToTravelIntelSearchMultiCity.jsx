@@ -17,7 +17,7 @@ function WhereToTravelIntelSearchMultiCity() {
         <div className="cityDetails-1 grid grid-cols-2 gap-4 xl:flex xl:items-center xl:gap-8 my-5 relative pt-12 xl:pt-0 border-2 border-gray-400 rounded-xl xl:border-none p-3 xl:p-0 pb-5">
           <div className="city-names-and-button col-span-2 bg-[#6B71B2] px-9 py-4 rounded-[30px] xl:w-1/2 text-white font-normal text-xl flex justify-between">
             <span>US | Los Angeles</span>
-            <span className="expandBtn bg-[#6B71B2] ">
+            <span className="expandBtn bg-[#6B71B2] cursor-pointer ">
               <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
             </span>
           </div>
@@ -61,7 +61,7 @@ function WhereToTravelIntelSearchMultiCity() {
               </span>
             </div>
           </div>
-          <span className="xl:block hidden cursor-pointer ">
+          <span className="xl:block hidden cursor-pointer">
             <img src={XFill} alt="" />
           </span>
           <span className="xl:hidden absolute right-3 top-2 cursor-pointer">
@@ -71,7 +71,7 @@ function WhereToTravelIntelSearchMultiCity() {
         <div className="cityDetails-2 grid grid-cols-2 gap-4 xl:flex xl:items-center xl:gap-8 my-5 relative pt-12 xl:pt-0 border-2 border-gray-400 rounded-xl xl:border-none p-3 xl:p-0 pb-5">
           <div className="city-names-and-button col-span-2 bg-[#6B71B2] px-9 py-4 rounded-[30px] xl:w-1/2 text-white font-normal text-xl flex justify-between">
             <span>US | Los Angeles</span>
-            <span className="expandBtn bg-[#6B71B2] ">
+            <span className="expandBtn bg-[#6B71B2] cursor-pointer ">
               <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
             </span>
           </div>
@@ -125,7 +125,7 @@ function WhereToTravelIntelSearchMultiCity() {
         <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-6 mt-8">
           <div className="selectAndDropBTN relative flex w-full lg:w-[83%] items-center">
             <select
-              className="rounded-[32px] w-full h-14 px-8 bg-white text-[#636C72] text-xl font-normal appearance-none"
+              className="outline-none cursor-pointer rounded-[32px] w-full h-14 px-8 bg-white text-[#636C72] text-xl font-normal appearance-none"
               name=""
               id=""
             >
@@ -136,7 +136,7 @@ function WhereToTravelIntelSearchMultiCity() {
             </div>
           </div>
           <button
-            className="rounded-[32px] bg-white flex items-center justify-center gap-3 h-14 lg:w-[15%] whitespace-nowrap  py-3 px-7 text-lg"
+            className="hover:bg-slate-100 rounded-[32px] bg-white flex items-center justify-center gap-3 h-14 lg:w-[15%] whitespace-nowrap  py-3 px-7 text-lg"
             onClick={() => {
               navigate("/intelsearch-multicity");
             }}

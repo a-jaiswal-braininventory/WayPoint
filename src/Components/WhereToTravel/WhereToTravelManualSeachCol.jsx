@@ -10,7 +10,7 @@ function WhereToTravelManualSeachCol() {
           <h4 className="text-left text-xl font-semibold">
             Where would you like to travel?
           </h4>
-          <span className="expandBtn bg-white h-10 w-10 flex items-center justify-center rounded-full">
+          <span className="expandBtn bg-white h-10 w-10 flex items-center justify-center rounded-full  hover:bg-slate-100">
             <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
           </span>
         </div>
